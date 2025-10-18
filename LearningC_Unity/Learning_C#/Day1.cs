@@ -15,7 +15,7 @@ Console.WriteLine(number);
 number = 10;
 Console.WriteLine(number);
 
-Console.ReadKey();
+
 
 // Declaration
 int numbers;
@@ -27,6 +27,21 @@ numbers = 5;
 // Initialization at declaration
 string text = "abc";
 var fullName = "John Smith";
-// var - easier way of initialization at declaration without writing 'string' or 'int'.
-// If we will use string on our var first, and then try to change it to a number - it will not work
-// fullName = 10; 
+/* var - easier way of initialization at declaration without writing 'string' or 'int'.
+ If we will use string on our var first, and then try to change it to a number - it will not work
+*/
+fullName = 10; 
+Console.WriteLine();
+// Console.ReadLine - input() in python
+var userChoice = Console.ReadLine();
+Console.WriteLine("User choice: " + userChoice);
+// Red dot (if we will click on the left side on the number - creates breakpoint.
+// Basically, code executing until this breakpoint moment. So we can test a specific part of the code
+userChoice = "ABC" + "DBC" + "CDQ";
+
+Console.ReadKey();
+
+
+/*
+With this we can write long comments, and not stuffing everything in one line
+*/

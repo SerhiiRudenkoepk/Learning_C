@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearningC_Unity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efc773657d64cb163b60575019338a48054771ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearningC_Unity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearningC_Unity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

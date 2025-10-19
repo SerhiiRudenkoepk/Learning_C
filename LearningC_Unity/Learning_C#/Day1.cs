@@ -45,3 +45,8 @@ Console.ReadKey();
 /*
 With this we can write long comments, and not stuffing everything in one line
 */
+
+// AND (&&) and OR (||) operators
+var number = 10;
+var checking = number > 2 && number < 3; // False
+var checking2 = number == 2 || number < 11; // True, because it is less than 11

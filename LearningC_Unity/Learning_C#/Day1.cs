@@ -50,3 +50,29 @@ With this we can write long comments, and not stuffing everything in one line
 var number = 10;
 var checking = number > 2 && number < 3; // False
 var checking2 = number == 2 || number < 11; // True, because it is less than 11
+
+
+// Functions/Methods
+// void __name__ (____parameter___)
+void PrintSelectedOption(string selectedOption)
+{
+ 
+}
+// non-void methods
+bool isLong(string input)
+{
+ if (input.Length > 10)
+ {
+  return true;
+ }
+ // The problem is, that if we create else and place return there - it will not work. Function should end on return
+ return false;
+}
+
+// Or we can do a refactor ( Code refactoring is the process of improving the code quality without alterin its behavior)
+
+bool IsLong(string input)
+{
+ return input.Length > 10;
+}
+int lad = int.Abs();

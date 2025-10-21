@@ -76,3 +76,13 @@ bool IsLong(string input)
  return input.Length > 10;
 }
 int lad = int.Abs();
+
+
+/* Now we learn about Parsing.
+What is Parsing? Parsing - transforming bool, int, string to other types 
+*/ 
+
+Console.WriteLine("Provide a number");
+string userInput = Console.ReadLine();
+int number = int.Parse(userInput);  // we changed string to int
+Console.WriteLine(number);

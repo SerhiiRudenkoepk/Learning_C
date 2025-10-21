@@ -86,3 +86,38 @@ Console.WriteLine("Provide a number");
 string userInput = Console.ReadLine();
 int number = int.Parse(userInput);  // we changed string to int
 Console.WriteLine(number);
+
+
+// String interpolation
+
+int a = 4, b = 2, c = 3;
+Console.WriteLine("First is " + a + ", second is " + b + ", third is " + c);
+// Instead we can just use $ and {} to do a string interpolation
+Console.WriteLine($"First is: {a}, and then {b}, and then {c}"); 
+Console.ReadLine();
+
+
+
+/*  Switch statements / default keyword / expressions 
+The switch statement provides a way to transfer the exection to different paths of code based on the value of expression.
+*/
+
+switch (userChoice)  // it will work as if else statement, but it's much shorter and more readable 
+{
+ case "S":
+  PrintSelectedOption("See all TODOs");
+  Console.WriteLine("Another line");
+  break; // Each case should end with break
+ case "A":
+  PrintSelectedOption("Add a TODO");
+  break;
+ case "R":
+  PrintSelectedOption("Remove a TODO");
+  break;
+ case "E":
+  PrintSelectedOption("Exit");
+  break;
+ default: // it works like else
+  Console.WriteLine("Invalid Choice");
+  break;
+}

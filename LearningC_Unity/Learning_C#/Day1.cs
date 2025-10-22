@@ -121,3 +121,53 @@ switch (userChoice)  // it will work as if else statement, but it's much shorter
   Console.WriteLine("Invalid Choice");
   break;
 }
+
+// or 
+
+switch (points)
+{
+ case 10:
+ case 9:
+  return 'A';
+ case 8:
+  return 'B';
+ case 7:
+ case 6:
+  return 'C';
+ default:
+  return '!';
+}
+
+// and let's refactor it and make it shorter
+
+return points switch
+{
+ 10 or 9 => 'A',
+ 8 => 'B',
+ 7 or 6 => 'C',
+ _ => '!', //default
+};
+
+// or
+
+return points switch
+{
+ >= 90 => 'A',
+ >= 80 => 'B',
+ >= 50 => 'C',
+ _ => 'D' // anything below 50 gets a D
+};
+
+// Loop
+// 1) While
+
+var number = 0;
+
+while (number < 10)
+{
+ number += 1;
+ number++; // means that it will +1 each time and '--' will -1 
+ Console.WriteLine("Number is: " + number);
+}
+
+Console.WriteLine("The loop is finished");

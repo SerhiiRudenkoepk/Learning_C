@@ -245,3 +245,14 @@ Tip 1: Move performance heavy code outside the loop, or to OUTER loops. */
 
 int[] numbers = new int[3] // arrays is an object of a class, and you need to use a 'new' keyword 
 // we're asking PC to create memory for new object and initialize it. [0, 0, 0]
+
+numbers[0] = 5;
+numbers[1] = 3; // we declared that number with index 1 = 3.
+// Because it's int - it can't be string.
+
+int[] numbers = new int[] { 2, 6, 1, 5, 20 };
+
+for (var i = 0; i < number.Length; ++i) //number.Length - len of the array. And we can't use <= here either
+{
+  
+}

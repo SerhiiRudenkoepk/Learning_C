@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningC_Unity", "Learning
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{08CE28DA-9965-42D2-9D5D-E3EF6769A08E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayPractice", "ArrayPractice\ArrayPractice.csproj", "{801C38BE-A403-47F4-ACCC-6135A008FC48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{08CE28DA-9965-42D2-9D5D-E3EF6769A08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08CE28DA-9965-42D2-9D5D-E3EF6769A08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08CE28DA-9965-42D2-9D5D-E3EF6769A08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801C38BE-A403-47F4-ACCC-6135A008FC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801C38BE-A403-47F4-ACCC-6135A008FC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801C38BE-A403-47F4-ACCC-6135A008FC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801C38BE-A403-47F4-ACCC-6135A008FC48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

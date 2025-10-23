@@ -171,3 +171,77 @@ while (number < 10)
 }
 
 Console.WriteLine("The loop is finished");
+
+/* In the while loop, the condition is checked before the first execution of the loop body
+ so it can happen that the code inside the loop will not be executed even once */
+
+while(condition) {
+   // some code
+}
+
+
+/* in the do-while loop the condition is checked after the code in the body is executed
+ so the code inside the loop will always be executed at least once*/
+do
+{
+   //some code
+}
+while (condition);
+
+do
+{
+ Console.WriteLine("Enter a word what is lnger than 10 chars");
+ word = Console.ReadLine(); // input
+}
+while (word.Lenght < 10); //check word if it's < 10
+
+
+// For in loop
+// initializer section (executed only once before entering the loop; 
+// Сondition section - boolean
+// iterator - it defines what happens after each execution of the bodt of the loop.
+// for (initializer; condition; iterator)
+for (int i = 0; i < 5; ++i)  
+{
+ Console.WriteLine("Hello");
+}
+
+// continue 
+for (var i = 0; i < 20; ++i)
+{
+ if (i % 3 == 0)
+ {
+  continue; // basically, when it's % by 3, it will continue and it will like do the part with it and go further in the loop
+ }
+ Console.WriteLine("i is " + 1);
+}
+
+Console.WriteLine("Loop if finished");
+
+
+/* Nested loops - loop what is inside of another loop. */
+
+// It will print until firt - k will be not higher 5, than it will start adding to j + 1, then it will go again for k then add another j
+// and it will loop untill i will be higher than 4, j higher 3 and k > 5.
+for (int i = 0; i < 4; ++i)
+{
+ for (int j = 0; j < 3; ++j)
+ {
+  for (int k = 0; k < 5; ++k) //  
+  {
+   Console.WriteLine($"is is {i}, j is {j}, k is {k}");  
+  }
+ }
+}
+
+/* What is 'Performance' ? 
+Performance - a measure of how fast the program is EXECUTED (not working) and how much resources (memory etc) it consumes
+
+Tip 1: Move performance heavy code outside the loop, or to OUTER loops. */
+
+
+// Arrays - the most basic COLLECTION type in C#, storing multiple elements of the same type.
+// array - collection of fixed size, so once an array is created, it's size can't be changed.
+
+int[] numbers = new int[3] // arrays is an object of a class, and you need to use a 'new' keyword 
+// we're asking PC to create memory for new object and initialize it. [0, 0, 0]

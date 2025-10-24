@@ -256,3 +256,19 @@ for (var i = 0; i < number.Length; ++i) //number.Length - len of the array. And 
 {
   
 }
+
+// Multidimensional array
+сhar[,] letters = new char[2, 3];
+
+letters[0, 0] = 'A';
+letters[0, 1] = 'B';
+letters[0, 2] = 'C';
+letters[1, 0] = 'D';
+letters[1, 1] = 'E';
+letters[1, 2] = 'F';
+
+var letters2 = new char[,]
+{
+ {'A', 'B', 'C'},
+ {'D', 'E', 'F'}
+}

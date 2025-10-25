@@ -1,6 +1,9 @@
 // First difference is that in C# comments are written through "//" instead of "#" in Python
 
 // As we can see, we're calling out console to write a line (in Python it's just ' print() '.
+
+using System.Globalization;
+
 Console.WriteLine("HelloWorld");
 // CTRL + R R - let you to replace the highlighted name to a different one (and all places where it currently placed)
 
@@ -266,6 +269,25 @@ letters[0, 2] = 'C';
 letters[1, 0] = 'D';
 letters[1, 1] = 'E';
 letters[1, 2] = 'F';
+
+// How to use it?
+var height = letters.GetLength(0);
+var width = letters.GetLength(1)
+Console.WriteLine("height is" + height);
+Console.WriteLine("width is" + width);
+
+// We can't use Len property as we did with a single-dimensional array as it gives a total number of the array (6)
+/* To access array to each dimension we're using GetLength for height and width (it's the first and the second
+ dimension of the array*/
+for (var i = 0; i < height; i++)
+{
+ Console.WriteLine("i is " + i);
+ for (var j = 0; j < height; j++)
+ {
+  Console.WriteLine("j is " + j);
+  Console.WriteLine("element is " + letter[i,j]);
+ }
+}
 
 var letters2 = new char[,]
 {

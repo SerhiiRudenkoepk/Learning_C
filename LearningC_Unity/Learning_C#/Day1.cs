@@ -294,3 +294,22 @@ var letters2 = new char[,]
  {'A', 'B', 'C'},
  {'D', 'E', 'F'}
 }
+
+// foreach - a simplier ver of for in. For example:
+
+var words = new [] {"one", "two", "three"};
+
+/* With 'for' loop it will be:
+for(var i = 0; i < words.Length; i++)
+{
+  Console.WriteLine(words[i]);
+} */ 
+ // with foreach it will be:
+
+ foreach (var word in words)
+ {
+  Console.WriteLine(word);
+ }
+ /* In this loop we don't have access to an index (and it's fine for us)
+ The variable of the loop, which we named "word" is the first element of the collection in the first iteration
+ of the loop. The second element in the second iteration and so on */

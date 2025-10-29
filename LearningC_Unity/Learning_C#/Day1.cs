@@ -313,3 +313,38 @@ for(var i = 0; i < words.Length; i++)
  /* In this loop we don't have access to an index (and it's fine for us)
  The variable of the loop, which we named "word" is the first element of the collection in the first iteration
  of the loop. The second element in the second iteration and so on */
+ 
+ // Another example
+ using System;
+
+ namespace Coding.Exercise
+ {
+  public class Exercise
+  {
+   public static bool IsAnyWordLongerThan(int length, string[] words)
+   {
+    foreach (var word in words)  //don't forget parenthesis () 
+    {
+     if(word.Length > length)
+     {
+      return true; // true is written lowercase, and so is 'false'
+     }
+                
+    }
+    return false;
+   }
+  }
+ }
+ 
+ /* LIST
+ List - size of a list CAN be changed (it's not fixed)
+ 
+ Difference between .Length and .Count:
+ .Length - used in arrays - returns a length of array (fixed)
+ .Count - used in List, Dictionary,  HashSet etc. - returns an amount of elements in collection (can be changed)
+  */
+ 
+
+// Important. <> after List - related to generic types and list is a generic type
+
+ List<string> words = new List<string>();  

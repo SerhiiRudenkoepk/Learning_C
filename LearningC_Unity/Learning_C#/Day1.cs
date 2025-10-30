@@ -3,6 +3,7 @@
 // As we can see, we're calling out console to write a line (in Python it's just ' print() '.
 
 using System.Globalization;
+using Console = System.Console;
 
 Console.WriteLine("HelloWorld");
 // CTRL + R R - let you to replace the highlighted name to a different one (and all places where it currently placed)
@@ -346,5 +347,25 @@ for(var i = 0; i < words.Length; i++)
  
 
 // Important. <> after List - related to generic types and list is a generic type
+// List - class
 
- List<string> words = new List<string>();  
+// List<string> words = new List<string>(); - we can write it like this or make it shorter
+ var words = new List<string>()
+ {
+  "one",
+  "two",
+  
+ };
+
+ words[0] = "uno";
+ words[1] = "due";
+ words[2] = "Will cause an error, cuz we only have 0 and 1."
+Console.WriteLine("Count of elements is " + words.Count); // counting a amount of elements in the collection
+
+words.Remove("two"); // we're removing "two" from the list. So we will have only "one" 
+foreach (var word in words)
+{
+ Console.WriteLine(word);
+}
+Console.ReadKey();
+ 

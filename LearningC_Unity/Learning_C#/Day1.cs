@@ -350,7 +350,7 @@ for(var i = 0; i < words.Length; i++)
 // List - class
 
 // List<string> words = new List<string>(); - we can write it like this or make it shorter
- var words = new List<string>()
+ var words = new List<string>();
  {
   "one",
   "two",
@@ -368,4 +368,6 @@ foreach (var word in words)
  Console.WriteLine(word);
 }
 Console.ReadKey();
+ 
+ 
  
